@@ -46,7 +46,7 @@ function Hero() {
 					<div className='flex order-first md:order-1 flex-col gap-5 md:flex lg:gap-10 '
 					 >
 						<motion.p className='text-3xl text-left font-bold md:text-center lg:text-left pt-8 md:pl-5 md:pt-0 lg:text-6xl dark:text-white'
-						initial={{ x: "calc(100vw - 50%)" }}
+						initial={{ x: "md:calc(100vw - 50%)" }}
 						animate={{ x: 0 }}
 						transition ={{ delay: 0.40 }}>
 							Stay Safe on the <br class="md:hidden lg:hidden" /> Road with Real- <br class="block md:block lg:hidden" /> Time <br class="hidden lg:block"/> Information

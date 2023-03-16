@@ -5,6 +5,7 @@ import { motion, AnimatePresence, useAnimation } from "framer-motion";
 
 function Ease() {
 	const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
+	
 	const animation = useAnimation();
 	useEffect(() => {
 		if (inView) {
@@ -18,8 +19,9 @@ function Ease() {
 			});
 		}
 		if (!inView) {
-			animation.start({ x: "100vw" });
+			animation.start({ x: "50vw md:100vw" });
 		}
+		
 	});
 
 	return (

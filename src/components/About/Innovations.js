@@ -17,7 +17,7 @@ function Innovations() {
 			});
 		}
 		if (!inView) {
-			animation.start({ x: "100vw" });
+			animation.start({ x: "50vw md:100vw"});
 		}
 	});
 	return (
