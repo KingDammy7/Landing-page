@@ -10,7 +10,7 @@ function Footer() {
 				<div className="lg:pl-10">
 			<picture >
    <source srcset="/transrisk.svg" media="(prefers-color-scheme: dark)" />
-   <img src="/Transriskl.svg" alt="Light Mode Image" />
+   <img src="/Transriskl.svg" alt="Light Mode Image" className="w-28 md:w-full" />
 </picture>
 </div>
 						</a>
@@ -63,7 +63,7 @@ function Footer() {
                         </div>
             </div>
 
-            <div className="lg:ml-8 lg:pl-2 flex items-center justify-center lg:justify-start pt-8">
+            <div className="lg:ml-8 lg:pl-2 flex items-center justify-start lg:justify-start pt-8">
 			<picture >
    <source srcset="/copy.svg" media="(prefers-color-scheme: dark)" />
    <img src="/Copyl.svg" alt="Light Mode Image" />

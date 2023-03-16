@@ -3,12 +3,20 @@ import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
 import Modal from "@/components/Modal";
+import { motion, AnimatePresence } from "framer-motion"
 
 export default function Home() {
 	const [navbar, setNavbar] = useState(false);
 	const [showModal, setShowModal] = useState(false);
 	return (
 		<div>
+			<AnimatePresence>
+			<motion.div
+			initial={{opacity: 0, y: 15 }}
+			animate={{opacity: 1, y: 0 }}
+			exit={{ opacity: 0, y: 15}}
+			transition ={{ delay: 0.25 }}
+			>
 			<nav className='bg-blacky border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-black shadow'>
 				<div class='container flex flex-wrap items-center justify-between mx-auto'>
 					<a href='#' class='flex items-start'>
@@ -16,7 +24,7 @@ export default function Home() {
 							src='/transrisk.svg'
 							alt='gallery-image'
 							className='md:pl-16 md:pt-4 relative md:w-fit'
-							width={140}
+							width={100}
 							height={41}
 							priority
 						/>
@@ -86,7 +94,7 @@ export default function Home() {
 								<li>
 									<Link
 										href='/'
-										class='block py-2 pl-3 pr-4 text-whitey rounded active:text-purple active:underline md:text-muddy md:p-0 dark:text-white'
+										class='block py-2 pl-3 pr-4 text-whitey rounded active:text-purple active:underline md:text-muddy  hover:bg-gray-100 hover:bg-transparent hover:text-purple md:p-0 dark:hover:text-whitey dark:text-muddy dark:hover:bg-purple hover:scale-125'
 										aria-current='page'
 									>
 										Home
@@ -95,7 +103,7 @@ export default function Home() {
 								<li>
 									<Link
 										href='/About'
-										class='block py-2 pl-3 pr-4 text-whitey md:text-muddy active:text-purple md:active:underline rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 '
+										class='block py-2 pl-3 pr-4 text-whitey md:text-muddy active:text-purple active:underline rounded hover:bg-gray-100 hover:bg-transparent hover:text-purple md:p-0 dark:hover:text-whitey dark:text-muddy dark:hover:bg-purple hover:scale-125'
 									>
 										About
 									</Link>
@@ -105,8 +113,9 @@ export default function Home() {
 					</div>
 				</div>
 			</nav>
+			</motion.div>
 
-			
+			</AnimatePresence>
 		</div>
 	);
 }
