@@ -61,7 +61,7 @@ function FAQ() {
          variants={textAnimation}>
 		
 		<p class="font-semibold text-xl md:text-3xl mt-5 tracking-tight">
-        Answered Questions
+       FAQS
 		</p>
 	</motion.div>
 	<div class="grid divide-y divide-neutral-200 max-w-3xl mx-auto mt-8 px-3 lg:px-10 dark:bg-blacky">
@@ -154,7 +154,7 @@ function FAQ() {
               </motion.span>
 				</summary>
 				<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
-					  As soon as the ap is released, we will released, we will be releasing different version of the  documentations to cater for the different use cases
+					  As soon as the ap is released, we will be releasing different version of the  documentations to cater for the different use cases
 					  and the documentation will be helpful for guiding on how to use the app.
 				</p>
 			</details>

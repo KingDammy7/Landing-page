@@ -37,7 +37,7 @@ function Team() {
 					
                             <p className='text-center md:text-left dark:text-white font-bold text-xl pt-5'> Oluwasijibomi Ogunniran  </p>
                             <p>
-                            Civil Engineer and Data-Scientist
+                            Founder
                             </p>
 						</div>
 						
@@ -54,7 +54,7 @@ function Team() {
 					/>
                       <p className='text-center md:text-left dark:text-white text-base pt-5'> Odetola Taiwo  </p>
                             <p>
-                            Civil Engineer and Data-Scientist
+                            Co-founder
                             </p>
 						</div>
                         <div className='text-center md:text-left dark:text-white'>
@@ -69,7 +69,7 @@ function Team() {
 					/>
               <p className='text-center md:text-left dark:text-white font-bold text-xl pt-5'> Damilola  </p>
                             <p>
-                            Geographers and GIS Analyst
+                            GIS Analyst
                             </p>
 						</div>
                         <div className='text-center md:text-left dark:text-white'>
