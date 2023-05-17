@@ -67,7 +67,7 @@ function Team() {
 						height={30}
 						
 					/>
-              <p className='text-center md:text-left dark:text-white font-bold text-xl pt-5'> Damilola  </p>
+              <p className='text-center md:text-left dark:text-white font-bold text-xl pt-5'> Salawu Damilola  </p>
                             <p>
                             GIS Analyst
                             </p>
@@ -84,7 +84,7 @@ function Team() {
 					/>
                              <p className='text-center md:text-left font-bold text-xl dark:text-white pt-5'> Bamise </p>
                             <p>
-                            Product Manager
+                            Geographers and GIS Analyst
                             </p>
 						</div>
                         <div className='text-center md:text-left dark:text-white'>

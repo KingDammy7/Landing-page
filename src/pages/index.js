@@ -65,7 +65,10 @@ export default function Home() {
 				<div className='px-4 py-4 lg:px-32 lg:py-8'>
 					<Screens />
 					<Core />
-					<Partner />
+					
+				</div>
+				<div>
+				<Partner />
 				</div>
 				<div className='px-4 py-4 lg:px-32 lg:py-8'>
 					<FAQ />

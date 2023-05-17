@@ -26,7 +26,7 @@ function Hero() {
 				transition ={{ delay: 0.40 }}
 						src='/tablet.svg'
 						alt='tab'
-						className='relative lg:w-fit'
+						className='relative lg:w-auto'
 						width={300}
 						height={420}
 						priority

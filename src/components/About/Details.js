@@ -11,7 +11,7 @@ function Details() {
 						width={400}
 						height={420}
 						loading='lazy'
-						src='/Details.svg'
+						src='/Details.png'
 						alt='tab'
 						className='relative '
 					/>
