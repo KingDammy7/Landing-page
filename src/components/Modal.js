@@ -7,7 +7,7 @@ export default function Modal({ setOpenModal,  }) {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_iec26n9', 'template_j9a6jus', form.current, '4Gu45lfT-wl6l6PyL')
+    emailjs.sendForm('service_4iotb2f', 'template_j9a6jus', form.current, '4Gu45lfT-wl6l6PyL')
       .then((result) => {
           console.log(result.text);
 		  e.target.reset();

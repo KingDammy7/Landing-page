@@ -7,7 +7,7 @@ export default function Pop({ setOpenPopModal,  }) {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_iec26n9', 'template_h7o1skr', form.current, '4Gu45lfT-wl6l6PyL')
+    emailjs.sendForm('service_4iotb2f', 'template_h7o1skr', form.current, '4Gu45lfT-wl6l6PyL')
       .then((result) => {
           console.log(result.text);
 		  e.target.reset();
