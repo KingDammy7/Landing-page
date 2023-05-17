@@ -23,12 +23,16 @@ module.exports = {
 		},
 		colors: {
 			purple: "#d0bcff",
+			purplee: "#EADDFF",
 			grey: "#938F99",
 			blacky: "#1C1B1F",
 			blacck: "#111111",
 			muddy: "#938F99",
 			whitey: "#FFFFFF",
 			greyy: "#49454F",
+			liney: "#49454F",
+			ashy: "#CAC4D0",
+			ashey:"#938F99" 
 			
 		},
 		extend: {

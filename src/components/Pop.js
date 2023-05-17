@@ -1,6 +1,21 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
 
 export default function Pop({ setOpenPopModal,  }) {
+	const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_iec26n9', 'template_h7o1skr', form.current, '4Gu45lfT-wl6l6PyL')
+      .then((result) => {
+          console.log(result.text);
+		  e.target.reset();
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
 	return (
 		<>
 			<div className='fixed inset-0 z-10 bg-whitey overflow-y-auto bg-opacity-25 backdrop-blur-sm flex items-center justify-center'>
@@ -31,7 +46,7 @@ export default function Pop({ setOpenPopModal,  }) {
 								</button>
 							</div>
 							<div className='p-4 '>
-								<form class='w-full max-w-sm'>
+								<form ref={form} onSubmit={sendEmail} class='w-full max-w-sm'>
 									<div class='flex flex-col w-full items-center '>
 										<div className='w-full flex items-start text-left'>
 											<input
@@ -39,10 +54,12 @@ export default function Pop({ setOpenPopModal,  }) {
 												type='text'
 												placeholder='First Name'
 												aria-label='First name'
+												name="first_name"
 											/>
 										</div>
 										<div className='w-full flex items-start text-left'>
 											<input
+											name="last_name"
 												class='appearance-none bg-transparent border-0 border-b border-greyy w-full text-gray-700 mr-3 py-3 px-2 leading-tight focus:outline-none'
 												type='text'
 												placeholder='Last Name'
@@ -51,6 +68,7 @@ export default function Pop({ setOpenPopModal,  }) {
 										</div>
 										<div className='pt-5 w-full flex items-start text-left'>
 											<input
+											name="user_email"
 												type='email'
 												id='email'
 												className='appearance-none dark:appearance-none  text-gray-700 bg-transparent dark:bg-transparent border-0 dark:border-b border-b border-greyy w-full text-gray-700 mr-3 py-3 px-2 leading-tight focus:outline-none '
@@ -60,8 +78,9 @@ export default function Pop({ setOpenPopModal,  }) {
 										</div>
 										<div className='flex items-center pt-5'>
 											<button
-												type='button'
-												class='text-black bg-purple hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-purple dark:text-black dark:hover:bg-blue-700 dark:focus:ring-blue-800'
+												type='submit'
+												value="Send" 
+												class='text-black bg-purple hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-purplee dark:text-black dark:hover:bg-blue-700 dark:focus:ring-blue-800'
 											>
 												Partner
 											</button>

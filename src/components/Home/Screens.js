@@ -26,7 +26,7 @@ function Screens() {
 			y: 0,
 			transition: {
 				duration: 1,
-				delay: 0.2,
+				delay: 0.1,
 				bounce: 0.35,
 				ease: [0.2, 0.65, 0.3, 0.9],
 			},
@@ -72,14 +72,14 @@ function Screens() {
 			<AnimatePresence>
 				<div
 					ref={ref}
-					className='flex flex-col md:flex-row md:justify-around items-center'
+					className='flex flex-col md:flex-row md:justify-around items-center '
 				>
 					<motion.img
 						ref={ref}
 						initial='hidden'
 						animate={animation}
 						variants={textAnimation}
-						src='/Phone.svg'
+						src='/Phone.png'
 						alt='tab'
 						className='relative '
 						width={400}
@@ -108,6 +108,11 @@ function Screens() {
 						</p>
 					</motion.div>
 				</div>
+
+			
+			<hr class="mx-28 hidden lg:block h-px my-8 bg-liney border-0 dark:bg-gray-700"/>
+			
+				
 
 				<div className='flex flex-col md:flex-row md:justify-around items-center'>
 					<motion.div
@@ -144,7 +149,7 @@ function Screens() {
 						initial='hidden'
 						animate={animation}
 						variants={secondAnimation}
-						src='/Emergency.svg'
+						src='/Emergency.png'
 						alt='tab'
 						className='relative pt-10 order-first md:order-2 md:pt-0'
 						width={400}
@@ -170,7 +175,7 @@ function Screens() {
 							initial={{ x: "calc(-100vw - 50%)" }}
 							animate={{ x: 0 }}
 							transition={{ delay: 0.8 }}
-							src='/Web.svg'
+							src='/Web.png'
 							alt='tab'
 							className='  '
 							width={400}
